@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="game-hands-styles.css">
+  </head>
+  <style></style>
+  <body>
+    <div class="game-interface">
+      <div class="game-top">
+        <div class="reset-button-container">
+        <button class='reset-button' onclick="resetScore()">Reset Score</button>
+        </div>
+        <h2>Rock Paper Scissors</h2>
+        <p class="js-score-paragraph"></p>
+      </div>
+
+      <div class="game-middle">
+        <p class="js-result-paragraph result"> </p>
+        <p class="js-moves-paragraph moves"> </p>
+      </div>
+
+      <div class="game-botton">
+        <button onclick="scoreGame(resultGame('rock',moveMachine()))" class="move-button"><img src="assets/rock.png" alt="" class="move-icon"></button>
+        <button onclick="scoreGame(resultGame('paper',moveMachine()))" class="move-button"><img src="assets/paper.png" alt=""class="move-icon"></button>
+        <button onclick="scoreGame(resultGame('scissors',moveMachine()))" class="move-button"><img src="assets/scissors.png" alt=""class="move-icon"></button>
+      </div>
+    </div>
+    
+
+    <script src="game-hands.js"></script>
+  </body>
+</html>
