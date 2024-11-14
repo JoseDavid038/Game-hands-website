@@ -32,7 +32,15 @@ body{
  
 }
 
-.reset-button{
+.game-autoplay{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+
+.reset-button,
+.autoPlay-button{
   background-color: white;
   padding: 10px 15px;
   font-weight: bold;

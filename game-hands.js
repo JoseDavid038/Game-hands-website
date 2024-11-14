@@ -76,3 +76,20 @@ let result;
         document.querySelector('.js-score-paragraph').innerHTML = `Wins: ${score.wins}, Ties: ${score.ties}, Losses: ${score.losses}`;
         localStorage.removeItem('score');
       }
+
+      let isAutoPlaying = false;
+      let intervalId;
+
+      function autoPlay(){
+      
+        if (!isAutoPlaying){
+          intervalId = setInterval(function() { 
+            const playerMove = moveMachine();
+            scoreGame(resultGame(playerMove,moveMachine()));
+          },1000);
+          isAutoPlaying = true;
+        }else{
+          clearInterval(intervalId);
+          isAutoPlaying = false;
+        }
+      }
