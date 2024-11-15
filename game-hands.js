@@ -49,6 +49,18 @@ let result;
         return result;
       }
 
+      document.querySelector('.js-move-rock').addEventListener('click', () => {
+        scoreGame(resultGame('rock',moveMachine()));
+      })
+
+      document.querySelector('.js-move-paper').addEventListener('click', () => {
+        scoreGame(resultGame('paper',moveMachine()));
+      })
+
+      document.querySelector('.js-move-scissors').addEventListener('click', () => {
+        scoreGame(resultGame('scissors',moveMachine()));
+      })
+
 
       function scoreGame(result){
          if (result === 'You win.'){
