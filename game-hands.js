@@ -61,6 +61,16 @@ let result;
         scoreGame(resultGame('scissors',moveMachine()));
       })
 
+      document.body.addEventListener('keydown', (event) => {
+        if (event.key === 'r'){
+          scoreGame(resultGame('rock',moveMachine()));
+        }else if(event.key === 'p'){
+          scoreGame(resultGame('paper',moveMachine()));
+        }else if(event.key === 's'){
+          scoreGame(resultGame('scissors',moveMachine()));
+        }
+      });
+
 
       function scoreGame(result){
          if (result === 'You win.'){
