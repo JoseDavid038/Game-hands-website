@@ -8,9 +8,7 @@
   <body>
     <div class="game-interface">
       <div class="game-top">
-        <div class="reset-button-container">
-        <button class='reset-button' onclick="resetScore()">Reset Score</button>
-        </div>
+        
         <h2>Rock Paper Scissors</h2>
         <p class="js-score-paragraph"></p>
       </div>
@@ -26,7 +24,13 @@
         <button class="move-button js-move-scissors"><img src="assets/scissors.png" alt=""class="move-icon"></button>
       </div>
       <div class="game-autoplay">
-        <button class="autoPlay-button" onclick="autoPlay()">Auto Play</button>
+        <div>
+          <button class="autoPlay-button" onclick="autoPlay()">Auto Play</button>
+        </div>
+        <div>
+          <button class='reset-button' onclick="resetScore()">Reset Score</button>
+        </div>
+        
       </div>
     </div>
     

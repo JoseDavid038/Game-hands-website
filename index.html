@@ -24,6 +24,7 @@
     }
 
     .game-image{
+      max-width: 100%;
       width: 200px;
       margin-bottom: 40px;
     }
@@ -36,6 +37,21 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+    }
+
+
+    /* responsive design */
+
+    @media (max-width: 760px){
+      .game-title{
+        font-size: 2rem;
+      }
+
+      .game-image{
+        width: 250px;
+      }
     }
 
 

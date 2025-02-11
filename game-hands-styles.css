@@ -29,13 +29,14 @@ body{
 
 .game-botton{
   margin: auto;
- 
 }
 
 .game-autoplay{
   display: flex;
-  justify-content: end;
-  margin-right: 10px;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: end;
+  margin-right: 20px;
   margin-bottom: 100px;
 }
 
@@ -47,12 +48,8 @@ body{
   font-size: 14px;
   border: none;
   cursor: pointer;
-}
-
-.reset-button-container{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  width: 100%;
+  max-width: 200px;
 }
 
 .move-icon{
@@ -80,4 +77,18 @@ body{
 .moves{
   font-size: 20px;
   font-weight: bold;
+}
+
+/* responsive design */
+
+@media (max-width: 760px){
+  .game-top{
+    flex-direction: column;
+  }
+
+  .game-autoplay{
+    text-align: center;
+    margin-top: 40px;
+  }
+
 }
