@@ -79,6 +79,11 @@ body{
   font-weight: bold;
 }
 
+.link-index{
+  text-decoration: none;
+  color: white;
+}
+
 /* responsive design */
 
 @media (max-width: 760px){
@@ -89,6 +94,16 @@ body{
   .game-autoplay{
     text-align: center;
     margin-top: 40px;
+  }
+
+  .move-icon{
+    height: 30px;
+  }
+
+  .move-button{
+    width: 90px;
+  height: 90px;
+  border-radius: 100px;
   }
 
 }
